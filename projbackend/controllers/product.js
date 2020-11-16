@@ -13,7 +13,7 @@ exports.getProductById = (req,res,next,id) =>{
         error: "Product not found"
       });
     }
-    res.product = product;
+    req.product = product;
     next();
   })
 }

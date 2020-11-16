@@ -44,7 +44,7 @@ import ImageHelper from './helper/ImageHelper';
               <p className="lead bg-success font-weight-normal text-wrap">
                 {cardDescription}
               </p>
-        <p className="btn btn-success rounded  btn-sm px-4">${cardPrice}</p>
+        <p className="btn btn-success rounded  btn-sm px-4">Rs.{cardPrice}</p>
               <div className="row">
                 <div className="col-12">
                   {showAddToCart(addtoCart)}

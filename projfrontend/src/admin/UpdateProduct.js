@@ -4,7 +4,7 @@ import { isAuthenticated } from '../auth/helper/index'
 import Base from '../core/Base'
 import { getCategories,getProduct, updateProduct} from './helper/adminapicall'
 
-const UpdateProduct = (match) => {
+const UpdateProduct = ({match}) => {
 
   const {user , token} = isAuthenticated();
 
@@ -67,8 +67,7 @@ const UpdateProduct = (match) => {
 
     useEffect(() => {
       preload(match.params.productId);
-
-    },[]);
+    }, []);
 
     const onSubmit = (event) =>{
       event.preventDefault()

@@ -28,7 +28,7 @@ const ManageProducts = () => {
       if (data.error) {
         console.log(data.error);
       } else {
-        setProducts(data);
+        preload();
       }
     });
   };
@@ -43,7 +43,7 @@ const ManageProducts = () => {
         <div className="col-12">
           <h2 className="text-center text-white my-3">List of products</h2>
 
-          {products.map((product, index) => {
+          { products.map((product, index) => {
             return (
               <div key={index} className="row text-center mb-2 ">
                 <div className="col-4">
